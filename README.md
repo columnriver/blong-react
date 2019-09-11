@@ -20,10 +20,6 @@
 - [x] 文章归档
 - [x] 文章详情的目录
 
-`因为访问地址 http://biaochenxuying.cn:2019/ 加了端口 2019 ，所以体验线上的授权功能会受限`
-
-`完整功能请访问 vue + typescript + element-ui 版的 https://biaochenxuying.cn`
-
 ### 待实现功能
 
 - [ ] 无
@@ -91,52 +87,6 @@ npm start 或者 yarn start
 # build for production with minification
 npm run build 或者 yarn run build
 ```
-
-如果要看完整的效果，是要和后台项目 **[blog-node](https://github.com/biaochenxuying/blog-node)** 一起运行才行的，不然接口请求会失败。
-
-虽然引入了 mock 了，但是还没有时间做模拟数据，想看具体效果，请稳步到我的网站上查看 [http://biaochenxuying.cn:2019](http://biaochenxuying.cn:2019)
-
-## 项目地址与文档教程
-
-其他具体的业务代码，都是些常会见到的需求，这里就不展开讲了。
-
-**项目地址：**
-
-> [前台展示: https://github.com/biaochenxuying/blog-react](https://github.com/biaochenxuying/blog-react)
-
-> [前台展示: https://github.com/biaochenxuying/blog-vue-typescript](https://github.com/biaochenxuying/blog-vue-typescript)
-
-> [管理后台：https://github.com/biaochenxuying/blog-react-admin](https://github.com/biaochenxuying/blog-react-admin)
-
-> [后端：https://github.com/biaochenxuying/blog-node](https://github.com/biaochenxuying/blog-node)
-
-> [blog：https://github.com/biaochenxuying/blog](https://github.com/biaochenxuying/blog)
-
-**本博客系统的系列文章：**
-
-- 1. [react + node + express + ant + mongodb 的简洁兼时尚的博客网站](https://biaochenxuying.cn/articleDetail?article_id=5bf57a8f85e0f13af26e579b)
-- 2. [react + Ant Design + 支持 markdown 的 blog-react 项目文档说明](https://biaochenxuying.cn/articleDetail?article_id=5bf6bb5e85e0f13af26e57b7)
-- 3. [基于 node + express + mongodb 的 blog-node 项目文档说明](https://biaochenxuying.cn/articleDetail?article_id=5bf8c57185e0f13af26e7d0d)
-- 4. [服务器小白的我,是如何将 node+mongodb 项目部署在服务器上并进行性能优化的](https://biaochenxuying.cn/articleDetail?article_id=5bfa728bb54f044b4f9da240)
-- 5. [github 授权登录教程与如何设计第三方授权登录的用户表](https://biaochenxuying.cn/articleDetail?article_id=5c7bd34e42b55e2ecc90976d)
-- 6. [一次网站的性能优化之路 -- 天下武功，唯快不破](https://biaochenxuying.cn/articleDetail?article_id=5c8ca2d3b87b8a04f1860c9a)
-- 7. [Vue + TypeScript + Element 搭建简洁时尚的博客网站及踩坑记](https://biaochenxuying.cn/articleDetail?article_id=5c9d8ce5f181945ddd6b0ffc)
-
-## 最后
-
-如果您觉得本项目和文章不错或者对你有所帮助，请给个星吧，你的肯定就是我继续创作的最大动力。
-
-鉴于问问题的人有点多，笔者时间有限，处理不过来，大家可以加入 QQ 群：**186045338**，加群暗号：**全栈修炼** ，一起相互交流学习。
-
-对 **全栈修炼** 有兴趣的朋友可以扫下方二维码关注我的公众号
- 
-我会不定期更新有价值的内容，长期运营。
-
-关注公众号并回复 **福利** 可领取免费学习资料，福利详情请猛戳：  [Python、Java、Linux、Go、node、vue、react、javaScript](https://biaochenxuying.cn/articleDetail?article_id=5bf4ba3c245730373274df61)
-
-![全栈修炼](https://upload-images.jianshu.io/upload_images/12890819-bce9560fec5c49ea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-
 7. 注意点
 7.1 打包的配置
 因为项目是用了 react-app-rewired (一个对 create-react-app 进行自定义配置的社区解决方案) 来打包了，所以如果你想修改 webpack.config.dev.js 和 webpack.config.prod.js 的配置，打包后可能看不到想要的效果，因为 react-app-rewired 打包时，是根据根目录的 config-overrides.js 来进行打包，所以要修改 webpack 的配置的话，请修改 config-overrides.js 。
